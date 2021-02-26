@@ -1,12 +1,18 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import Layout from '../src/components/Layout';
+import Map from '../src/components/Map';
+import Box from '@material-ui/core/Box';
+
+
 
 
 export default function Home() {
   return (
-    <div>
-      comecando
-      <Button color="primary">Hello World</Button>;
-    </div>
+    <>
+        <Box component="div" overflow="hidden">
+            <Layout title="MyPlace"></Layout>
+            <Map></Map>
+        </Box>
+    </>
   );
 }
