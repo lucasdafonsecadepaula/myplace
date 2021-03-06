@@ -7,13 +7,16 @@ import SearchIcon from '@material-ui/icons/Search';
 
 
 const useStyles = makeStyles((theme) => ({
+    center:{
+        width: '100vw',
+    },
     root:{
         position: 'absolute',
         top: 750,
-        right: "40%",
         display: 'flex',
         alignItems: 'center',
-        width: 400,
+        width: 700,
+        left: "34%",
     },
     input:{
         marginLeft: theme.spacing(1),
@@ -29,15 +32,17 @@ function SearchBar(){
 
     return (
         <>
-            <Paper component="form" className={classes.root}>
-                <InputBase
-                    className={classes.input}
-                    placeholder="Search"
-                />
-                <IconButton type="submit" className={classes.iconButton} aria-label="search">
-                    <SearchIcon />
-                </IconButton>
-            </Paper>
+            <div className={classes.center}>
+                <Paper component="form" className={classes.root}>
+                    <InputBase
+                        className={classes.input}
+                        placeholder="Search"
+                    />
+                    <IconButton type="submit" className={classes.iconButton} aria-label="search">
+                        <SearchIcon />
+                    </IconButton>
+                </Paper>
+            </div>
         </>
     );
 };

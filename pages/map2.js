@@ -16,7 +16,7 @@ export default function App() {
     <>
          <ReactMapGL
             mapStyle="mapbox://styles/lucasdafonsecadepaula/ckllb6f0i0v7g17qn7uk6apsd"
-            mapboxApiAccessToken="pk.eyJ1IjoibHVjYXNkYWZvbnNlY2FkZXBhdWxhIiwiYSI6ImNrbGJrcjhzMDJyaDIzMm5ydDhsODgyZGEifQ.SU8e15tTWit54umOThvsBw"
+            mapboxApiAccessToken={ACCESS_TOKEN_MAP}
             {...viewport} width="100vw" height="100vh" onViewportChange={setViewport}
             >
         

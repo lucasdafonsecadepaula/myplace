@@ -31,7 +31,7 @@ class Map extends Component {
         
             {enterprise.location.map((local) => (
             <Marker latitude={local.coordinates[0]} longitude={local.coordinates[1]}>
-                <img src="/bar.png" height="30px;"/>
+                <button><img src="/bar.png" height="30px;"  /></button>
             </Marker>
             ))}
             {friends.location.map((local) => (
