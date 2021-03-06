@@ -1,0 +1,128 @@
+#mapid { height: 980px; }
+
+
+#ativo {
+    color: whitesmoke;
+}
+#desativado{
+    color: #a3a1a1;
+}
+#desativado:hover{
+    color: rgba(245, 245, 245, 0.808);
+}
+
+#cell{
+    background-color: whitesmoke;
+}
+
+#cell:hover{
+    background-color:  rgba(184, 184, 184, 0.808);
+}
+
+.cell{
+    background-color: whitesmoke;
+}
+.cell:hover{
+    background-color:  rgba(184, 184, 184, 0.808);
+}
+
+#dia26{
+    background-color: rgb(179, 255, 255);
+}
+#dia26:hover{
+    background-color: rgb(0, 162, 255);
+}
+
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+}
+
+.stories {
+    display: inline-block;
+}
+
+
+
+
+
+
+.items {
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .items::-webkit-scrollbar{
+      display: none;
+  }
+
+  .items.active {
+    background: rgba(255,255,255,0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+  }
+
+  .item {
+    background-color: rgb(193, 255, 203);
+    border-radius: 15px;
+    display: inline-block;
+    min-height: auto;
+    min-width: 175px;
+    margin: 2em 1em;
+    @media screen and (max-width: 500px) {
+      min-height: 200px;
+      min-width: 200px;
+    }
+  }
+
+
+
+.sla{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    display:none;
+
+}
+
+.sla2{
+    width: auto;
+    height: 850px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 75px;
+    text-align: center;
+    position: relative;
+}
+
+.fecha{
+    position: absolute;
+    top: 0px;
+    font-size: 40px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    right: 25px;
+}
+
+#local{
+    cursor:pointer;
+}

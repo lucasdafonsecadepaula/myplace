@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPlace</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="texto_style.css">
+
+
+    <style>
+
+
+        .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="myplace_home.html" id="desativado">MyPlace</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="myplace_chat.html">Chat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="myplace_locais.html">Locais</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="myplace_eventos.html" id="ativo">Eventos</a>
+              </li>]
+              <!--
+              <li class="nav-item">
+                <a class="nav-link" href="myplace_carteira.html" id="ativo">Carteira</a>
+              </li>
+
+              -->
+            </ul>
+
+            <div>
+              <form class="d-flex">
+                <img src="perfil.png" alt="foto de perfil" style="height: 40px; padding-top: 0px;">
+                <a class="nav-link" href="myplace_pefil.html" id="desativado">Perfil</a>
+              </form>
+            </div>
+
+
+          </div>
+        </div>
+      </nav>
+
+
+      <div style="padding-top: 55px;"></div> <!-- talvez espaçamento-->
+
+
+
+
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+
+          <table class="table table-bordered border-light shadow">
+
+ 
+            <thead>
+              <tr class="table-light text-center">
+                <th scope="col" id="cell">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                  </svg>
+                </th>
+                <th scope="col" colspan="5">Fevereiro</th>
+                <th scope="col" id="cell">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                  </svg>
+                </th>
+              </tr>
+            </thead>
+            
+            <thead>
+              <tr class="table-light text-center">
+                <th scope="col">Dom.</th>
+                <th scope="col">Seg.</th>
+                <th scope="col">Ter.</th>
+                <th scope="col">Qua.</th>
+                <th scope="col">Qui.</th>
+                <th scope="col">Sex.</th>
+                <th scope="col">Sab.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-light text-center">
+                <td id="cell">31</td>
+                <td id="cell">1</td>
+                <td id="cell">2</td>
+                <td id="cell">3</td>
+                <td id="cell">4</td>
+                <td id="cell">5</td>
+                <td id="cell">6</td>
+              </tr>
+              <tr class="table-light text-center">
+                <td id="cell">7</td>
+                <td id="cell">8</td>
+                <td id="cell">9</td>
+                <td id="cell">10</td>
+                <td id="cell">11</td>
+                <td id="cell">12</td>
+                <td id="cell">13</td>
+              </tr>
+              <tr class="table-light text-center">
+                <td id="cell">14</td>
+                <td id="cell">15</td>
+                <td id="cell">16</td>
+                <td id="cell">17</td>
+                <td id="cell">18</td>
+                <td id="cell">19</td>
+                <td id="cell">20</td>
+              </tr>
+              <tr class="table-light text-center">
+                <td id="cell">21</td>
+                <td id="cell">22</td>
+                <td id="cell">23</td>
+                <td id="cell">24</td>
+                <td id="cell">25</td>
+                <td id="dia26">26</td>
+                <td id="cell">27</td>
+              </tr>
+              <tr class="table-light text-center">
+                <td id="cell">28</td>
+                <td id="cell">1mar.</td>
+                <td id="cell">2</td>
+                <td id="cell">3</td>
+                <td id="cell">4</td>
+                <td id="cell">5</td>
+                <td id="cell">6</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+
+
+
+
+
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+            <div class="col">
+              <div class="card shadow">
+                <img src="pexels-edoardo-tommasini-2034851.jpg" alt="">
+    
+                <div class="card-body">
+                  <div>
+                    <h5 style="display: inline;">Evento</h5>
+                    <h4 style="display: inline; float: right;">XX R$</h4>
+                  </div>
+                  <p class="card-text">Descrição do evento</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-info">Visualizar</button>
+                      <button type="button" class="btn btn-sm btn-outline-success">Comprar</button>
+                    </div>
+
+
+                    <div class="position-relative" style="width: 50%; height: 40px;">
+                      <small class="text-muted">
+                        <div class="position-absolute top-0 end-0">X dias para o evento</div>
+                        <div class="position-absolute bottom-0 end-0">Y amigos já comprou</div>
+                      </small>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card shadow">
+              <img src="pexels-edoardo-tommasini-2034851.jpg" alt="">
+  
+              <div class="card-body">
+                <div>
+                  <h5 style="display: inline;">Evento</h5>
+                  <h4 style="display: inline; float: right;">XX R$</h4>
+                </div>
+                <p class="card-text">Descrição do evento</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-info">Visualizar</button>
+                    <button type="button" class="btn btn-sm btn-outline-success">Comprar</button>
+                  </div>
+
+
+                  <div class="position-relative" style="width: 50%; height: 40px;">
+                    <small class="text-muted">
+                      <div class="position-absolute top-0 end-0">X dias para o evento</div>
+                      <div class="position-absolute bottom-0 end-0">Y amigos já comprou</div>
+                    </small>
+                  </div>   
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow">
+            <img src="pexels-edoardo-tommasini-2034851.jpg" alt="">
+
+            <div class="card-body">
+              <div>
+                <h5 style="display: inline;">Evento</h5>
+                <h4 style="display: inline; float: right;">XX R$</h4>
+              </div>
+              <p class="card-text">Descrição do evento</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-info">Visualizar</button>
+                  <button type="button" class="btn btn-sm btn-outline-success">Comprar</button>
+                </div>
+
+
+                <div class="position-relative" style="width: 50%; height: 40px;">
+                  <small class="text-muted">
+                    <div class="position-absolute top-0 end-0">X dias para o evento</div>
+                    <div class="position-absolute bottom-0 end-0">Y amigos já comprou</div>
+                  </small>
+                </div>   
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card shadow">
+          <img src="pexels-edoardo-tommasini-2034851.jpg" alt="">
+
+          <div class="card-body">
+            <div>
+              <h5 style="display: inline;">Evento</h5>
+              <h4 style="display: inline; float: right;">XX R$</h4>
+            </div>
+            <p class="card-text">Descrição do evento</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-info">Visualizar</button>
+                <button type="button" class="btn btn-sm btn-outline-success">Comprar</button>
+              </div>
+
+
+              <div class="position-relative" style="width: 50%; height: 40px;">
+                <small class="text-muted">
+                  <div class="position-absolute top-0 end-0">X dias para o evento</div>
+                  <div class="position-absolute bottom-0 end-0">Y amigos já comprou</div>
+                </small>
+              </div>   
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow">
+        <img src="pexels-edoardo-tommasini-2034851.jpg" alt="">
+
+        <div class="card-body">
+          <div>
+            <h5 style="display: inline;">Evento</h5>
+            <h4 style="display: inline; float: right;">XX R$</h4>
+          </div>
+          <p class="card-text">Descrição do evento</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-info">Visualizar</button>
+              <button type="button" class="btn btn-sm btn-outline-success">Comprar</button>
+            </div>
+
+
+            <div class="position-relative" style="width: 50%; height: 40px;">
+              <small class="text-muted">
+                <div class="position-absolute top-0 end-0">X dias para o evento</div>
+                <div class="position-absolute bottom-0 end-0">Y amigos já comprou</div>
+              </small>
+            </div>   
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="col">
+    <div class="card shadow">
+      <img src="pexels-edoardo-tommasini-2034851.jpg" alt="">
+
+      <div class="card-body">
+        <div>
+          <h5 style="display: inline;">Evento</h5>
+          <h4 style="display: inline; float: right;">XX R$</h4>
+        </div>
+        <p class="card-text">Descrição do evento</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-info">Visualizar</button>
+            <button type="button" class="btn btn-sm btn-outline-success">Comprar</button>
+          </div>
+
+
+          <div class="position-relative" style="width: 50%; height: 40px;">
+            <small class="text-muted">
+              <div class="position-absolute top-0 end-0">X dias para o evento</div>
+              <div class="position-absolute bottom-0 end-0">Y amigos já comprou</div>
+            </small>
+          </div>   
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
